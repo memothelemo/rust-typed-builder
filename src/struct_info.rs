@@ -150,6 +150,7 @@ impl<'a> StructInfo<'a> {
             #[must_use]
             #builder_type_doc
             #[allow(dead_code, non_camel_case_types, non_snake_case)]
+            #[doc(hidden)]
             #builder_type_visibility struct #builder_name #b_generics {
                 fields: #all_fields_param,
                 phantom: ::core::marker::PhantomData<(#( #phantom_generics ),*)>,
